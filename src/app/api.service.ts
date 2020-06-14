@@ -113,6 +113,29 @@ export class ApiService {
           return user;
         });
       }
+      findReseller(username: string) {
+
+        const httpOptions = {
+          headers: new HttpHeaders({
+            'Content-Type':  'application/json',
+          
+            
+    
+          })
+        };
+        return this.http.post<any>(this.url + '/findResellerID', {  
+          ResellerID: username,
+      
+        
+    
+    
+    
+        }, httpOptions)
+          .map(user => {
+    
+            return user;
+          });
+        }
 
       getResllers() {
 

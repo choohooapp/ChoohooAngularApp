@@ -91,7 +91,7 @@ showmore = false;
          }
          if (response.message =="notfound") {
       
-          this. errorMessage ="User not Found"
+          this. errorMessage ="Reseller Not Found"
           // this.showlogin = true;
           // this.showpwd =false;
 

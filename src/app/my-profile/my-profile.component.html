@@ -51,7 +51,10 @@
         </div>
 
         <button *ngIf ="buybtn"type="submit" class="btn btn-black"  (click)="Buy()">Buy Game Units</button>
-        <button type="submit" class="btn btn-black"  (click)="Buy()">Share</button>
+        <a 
+        [routerLink]="['/byr', 1234]">
+         share
+      </a>
     </div>
 
 

@@ -20,6 +20,7 @@ import { GameunitsAdComponent } from './gameunits-ad/gameunits-ad.component';
 import { NgxPayPalModule } from 'ngx-paypal';
 import { ResAdminComponent } from './res-admin/res-admin.component';
 import { HistoryResellerComponent } from './history-reseller/history-reseller.component';
+import { BuyResellerComponent } from './buy-reseller/buy-reseller.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,9 @@ import { HistoryResellerComponent } from './history-reseller/history-reseller.co
 
     ResAdminComponent,
 
-    HistoryResellerComponent
+    HistoryResellerComponent,
+
+    BuyResellerComponent
   ],
   imports: [
     BrowserModule,

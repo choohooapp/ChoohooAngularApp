@@ -10,6 +10,7 @@ import { ApplicationPrComponent } from './application-pr/application-pr.componen
 import { GameunitsAdComponent } from './gameunits-ad/gameunits-ad.component';
 import { ResAdminComponent } from './res-admin/res-admin.component';
 import { HistoryResellerComponent } from './history-reseller/history-reseller.component';
+import { BuyResellerComponent } from './buy-reseller/buy-reseller.component';
 
 
 const routes: Routes = [
@@ -17,6 +18,7 @@ const routes: Routes = [
   { path: '', redirectTo: '/login', pathMatch: 'full' },
   { path: 'rs', component: ResellerComponent },
   { path: 'hr', component: HistoryResellerComponent },
+  { path: 'byr/:id', component: BuyResellerComponent},
   { path: 'gm', component:   GameunitsAdComponent },
   { path: 'pf', component: MyProfileComponent },
   { path: 'rsad', component: ResAdminComponent },
