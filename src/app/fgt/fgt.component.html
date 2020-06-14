@@ -1,0 +1,74 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<div class="sidenav">
+         <div class="login-main-text">
+            <h2>ADMIN<br></h2>
+          
+         </div>
+      </div>
+      <div class="main">
+         
+            <img src="assets/log.jpg" style="height:200px">
+            <div *ngIf ="errorMessage"class="alert alert-danger" role="alert">
+                    {{errorMessage}}
+                  </div>
+         <div  *ngIf ="hideme"class="col-md-6 col-sm-12">
+            <div class="login-form">
+               <form>
+                  <div class="form-group">
+                     <label>Email</label>
+                     <input type="text" name="email" [(ngModel)]="mylogin.username"  class="form-control" placeholder="Email">
+                  </div>
+              
+                  <button type="submit" class="btn btn-black" (click)="reset()" >Reset</button>
+                  
+                 
+               </form>
+             
+            </div>
+         </div>
+         <div *ngIf ="showform" class="col-md-6 col-sm-12">
+                <div class="login-form">
+                   <form>
+                      <div class="form-group">
+
+                        <h1>Security Question</h1>
+                        
+                         <div  *ngIf ="squestion"class="alert alert-dark" role="alert">
+                                {{squestion}}
+                              </div>
+                         <input type="text" name="answer" [(ngModel)]="mylogin.username"  class="form-control" placeholder="Answer">
+                      </div>
+                  
+                      <button type="submit" class="btn btn-black" (click)="check()" >Submit</button>
+                      <!-- <button type="submit" (click)="showPWD()" class="btn btn-secondary">Cancel</button> -->
+                  
+                   </form>
+                 
+                </div>
+             </div>
+             <div *ngIf ="showpwd" class="col-md-6 col-sm-12">
+                    <div class="login-form">
+                       <form>
+                          <div class="form-group">
+                           
+                            <h1>Change Password </h1>
+                            
+                            
+                             <input type="text" name="answer" [(ngModel)]="mylogin.username"  class="form-control" placeholder="Code">
+                             <input type="text" name="answer" [(ngModel)]="mylogin.password"  class="form-control" placeholder="New Password">
+                          </div>
+                      
+                          <button type="submit" class="btn btn-black" (click)="update()" >Change</button>
+                          <!-- <button type="submit" (click)="showPWD()" class="btn btn-secondary">Cancel</button> -->
+                      
+                       </form>
+                     
+                    </div>
+                 </div>
+                 <button   *ngIf ="showlogin"type="submit" class="btn btn-black" (click)="LOGIN()" >LOGIN</button>
+      </div>
+
