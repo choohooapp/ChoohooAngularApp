@@ -24,20 +24,6 @@
                         <td>{{details.Type}}</td>
                         <td>{{details.AdminStatus}}</td>
                         <td>{{details.units}}</td>
-                        <!-- <td>
-                                <div class="btn-group show-on-hover">
-                                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-                                            <span class="caret"></span>
-                                        </button>
-                                        <ul  class="dropdown-menu" role="menu">
-                                          <li><a   (click)="addAction('Super Admin')"value ="Super Admin"> Super Admin</a></li>
-                                          <li><a  (click)="addAction('Admin Manager')"value ="Admin Manage">Admin Manager</a></li>
-                                          <li><a (click)="addAction('Delete')" value ="Admin Manage">Delete</a></li>
-                                          <li><a  (click)="addAction('Ban')"value ="Admin Manage">Ban</a></li>
-                
-                                        </ul>
-                                      </div>
-                        </td>                                       -->
                     </tr>
              
               
@@ -52,7 +38,7 @@
 
         <button *ngIf ="buybtn"type="submit" class="btn btn-black"  (click)="Buy()">Buy Game Units</button>
         <a 
-        [routerLink]="['/byr', 1234]">
+        [routerLink]="['/byr', details.ResellerID]">
          share
       </a>
     </div>

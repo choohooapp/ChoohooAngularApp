@@ -26,3 +26,170 @@ a{
 .fa{
      color:#4183D7;
 }
+.center {
+    padding-top: 20px;
+    margin: auto;
+    width: 50%;
+
+}
+.center-div{
+    margin-top: 20px;
+}
+.card {
+    border: #1a242f;
+    transition: 0.3s;
+    width: 300px;
+    height: 120px;
+}
+.warning {
+    width: 300px;
+    height: 120px;
+    border: 2px solid #343434;
+    border-radius: 10px;
+    padding: 15px;
+}
+.warning-review {
+    width: 350px;
+    height: 130px;
+    border: 2px solid #343434;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.mt-10{
+    margin-top: 10px;
+}
+.mt-20{
+    margin-top: 20px;
+}
+.mt-30{
+    margin-top: 30px;
+}
+.ml-100{
+    margin-left: 80px;
+}
+.ml-60{
+    margin-left: 80px;
+}
+
+.input-units{
+    width: auto;
+}
+input[type="button"] {
+    -webkit-appearance: button;
+    cursor: pointer;
+}
+
+.unit-text{
+    max-width: 50px;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    height: 40px;
+    position: relative;
+    font-weight: bold;
+    text-align: center;
+    width: 62px;
+    display: inline-block;
+    font-size: 13px;
+    margin: 0 0 5px;
+    resize: vertical;
+}
+
+.input-group input[type='button'] {
+    background-color: #eeeeee;
+    min-width: 38px;
+    width: auto;
+    transition: all 300ms ease;
+}
+
+
+.button-plus {
+    font-weight: bold;
+    width: 50px;
+    font-size: 30px;
+    padding: 13px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+.totalPrice{
+    font-weight: bold;
+    font-size: 18px;
+}
+.mt-40{
+    margin-top: 40px;
+}
+
+
+.rightArrow {
+    width: 45px;
+    margin-left: 110px;
+    cursor: pointer;
+}
+.support-text{
+    text-align: center;
+    width: 400px;
+    font-size: 14px;
+    color: #717171;
+}
+.text-date{
+    font-size: smaller;
+    color: #888888;
+    float: right;
+}
+.margin-left25{
+    margin-left: 25px;
+}
+.text-numbergen{
+    color: #888888;
+    font-size: smaller;
+}
+.details-table{
+    width: 350px;
+    text-align: center;
+}
+.background-grey{
+    background: #EBEBEB;
+}
+.buygametext
+{
+    font-size: inherit;
+    font-weight: 600;
+}
+.paymentcard {
+    width: 350px;
+    height: 100px;
+    box-shadow: 0 1px 6px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+.payment-other-card{
+    width: 350px;
+    height: 30px;
+    box-shadow: 0 1px 4px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    margin-top: 3px;
+    background: #464545;
+    color: white;
+}
+.paymentradio{
+    border: 2px solid #000000;
+    border-radius: 10px;
+    height: 25px;
+    position: relative;
+    font-weight: bold;
+    text-align: center;
+    width: 62px;
+    display: inline-block;
+    font-size: 13px;
+    margin: 0 0 5px;
+    resize: vertical;
+}
+
+.payment-number{
+    margin-left: 40px;
+}
+.option-card{
+    background: #464545;
+    color: white;
+    width: 350px;
+    height: 30px;
+}

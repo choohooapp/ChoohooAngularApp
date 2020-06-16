@@ -1,14 +1,103 @@
+
 <div *ngIf ="errorMessage" class="alert alert-success">
     <strong> {{errorMessage}}</strong> 
   </div>
+<div class="center" >
+    <div class="center-div">
+        <div class="buy-units" *ngIf ="showBuycredits">
+            <h5>BUY GAME UNITS FOR RESELLER CASH SALES</h5>
+            <div class="ml-100" >
+                <div class="center-div">
+                    <h6>Reseller : {{details.Name}} MAPONGA</h6>
+                    <h6>Sales Channel ID : {{details.ResellerID}}</h6>
+                    <h6>City Country : {{details.City}} {{details.Country}}</h6>
+                </div>
+                <div class="warning mt-30">
+                    <div class="mt-10">
+                        <p><img src="../../assets/images/alert.png"> R50.00  |  50 Units per batch </p>
+                    </div>
+                </div>
 
+                <div class="mt-30">
+                    <div class="input-units">
+                        <span class="button-plus" (click)="DecreaseUnitPurchase()">-</span>
+                        <span><input class="unit-text" [ngModel]="UnitPurchase" type="text"></span>
+                        <span  class="button-plus" (click)="IncreaseUnitPurchase()">+</span>
+                        <span class="totalPrice">Total : {{UnitPurchaseTotal | currency:'R'}}</span>
+                    </div>
+                </div>
+                <div class="mt-40">
+                    <img class="rightArrow" src="../../assets/images/righArrow.png" (click)="gotoReview()">
+                </div>
+            </div>
+        </div>
+        <div class="Review" *ngIf ="showCreditsReview">
+            <p class="buygametext" >BUY GAME UNITS FOR RESELLER CASH SALES | Review</p>
+            <div class="mt-10">
+                <p class="support-text">if something appears to be missing or incorrect,<br>please contact CUSTOMER SUPPORT</p>
+            </div>
+            <div>
+                <div class="warning-review mt-30">
+                    <div>
+                        <span  class="text-date">{{DateTimeNow | date:'fullDate'}}</span>
+                    </div>
+                    <div class="mt-20">
+                        <p><img src="../../assets/images/alert.png" class="margin-left25"> R50.00  |  50 Units per batch
+                            <span class="text-numbergen">Game Units Number: GUWAGenerated6digitNumber</span>
+                        </p>
 
-<div class="card" style="width: 18rem;">
-    <img src="assets/log.jpg"  class=".img-rounded"style="height:200px">
-    <div class="card-body">
-      <h5 class="card-title">BUY GAME UNITS</h5>
-      <h5 class="card-title">Name :{{details.Name}}</h5>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+                <div class="mt-20">
+                    <table border="1" class="details-table">
+                        <tr class="background-grey">
+                            <th>Item</th>
+                            <th>Quantity</th>
+                            <th>Units</th>
+                            <th>Price</th>
+                        </tr>
+                        <tr>
+                            <td>50 Units</td>
+                            <td>{{UnitPurchase }}</td>
+                            <td>{{UnitPurchaseTotal | currency:'R'}}</td>
+                            <td>{{50 | currency:'R'}}</td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: right;font-weight: bold" colspan="3">Vat</td>
+                            <td >{{VatAmount | currency:'R'}}</td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: right;font-weight: bold" colspan="3">Total</td>
+                            <td >{{TotalAmount | currency:'R'}}</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="mt-10">
+                    <p class="support-text">PAYMENT METHODS</p>
+                </div>
+                <div class="paymentcard">
+                 <input class="paymentradio mt-10" type="radio"><img src="../../assets/images/mastercard.png">
+                    <p class="payment-number">****  ****  ****  1234</p>
+                </div>
+                <div class="payment-other-card">
+                    <select class="option-card" [ngModel]="PaymentMethod">
+                        <option value="mc">Other Payment methods:</option>
+                         <option value="eft" >Credit</option>
+                        <option value="2">PayPal</option>
+                        <option value="cc" >Credit</option>
+                        <option value="dc" >Debit</option>
+                        <option value="bc" >Bitcoin</option>
+                        <option value="mp" >Masterpass</option>
+                        <option value="mc" >MasterCard</option>
+                        <option value="6">Scode</option>
+                    </select>
+                </div>
+                <div class="mt-40">
+                    <img class="rightArrow" src="../../assets/images/righArrow.png" (click)="gotoPayment()">
+                </div>
+            </div>
+        </div>
+
     </div>
-  </div>
+
+</div>
