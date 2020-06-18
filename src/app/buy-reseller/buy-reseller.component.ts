@@ -30,7 +30,7 @@ export class BuyResellerComponent implements OnInit, OnDestroy {
     this.DateTimeNow = new Date();
     this.VatAmount = 150;
     this.TotalAmount = this.UnitPurchaseTotal = this.UnitPurchase * 50;
-    this.PaymentMethod = 'mc';
+    this.PaymentMethod = '';
   }
 
   ngOnInit() {

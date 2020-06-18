@@ -75,14 +75,10 @@
                 <div class="mt-10">
                     <p class="support-text">PAYMENT METHODS</p>
                 </div>
-                <div class="paymentcard">
-                 <input class="paymentradio mt-10" type="radio"><img src="../../assets/images/mastercard.png">
-                    <p class="payment-number">****  ****  ****  1234</p>
-                </div>
                 <div class="payment-other-card">
                     <select class="option-card" [ngModel]="PaymentMethod">
-                        <option value="mc">Other Payment methods:</option>
-                         <option value="eft" >Credit</option>
+                        <option value=""  selected>Select Payment Methods:</option>
+                        <option value="eft" >Credit</option>
                         <option value="2">PayPal</option>
                         <option value="cc" >Credit</option>
                         <option value="dc" >Debit</option>
@@ -91,6 +87,10 @@
                         <option value="mc" >MasterCard</option>
                         <option value="6">Scode</option>
                     </select>
+                </div>
+                <div class="paymentcard">
+                 <input class="paymentradio mt-10" type="radio"><img src="../../assets/images/mastercard.png">
+                    <p class="payment-number">****  ****  ****  1234</p>
                 </div>
                 <div class="mt-40">
                     <img class="rightArrow" src="../../assets/images/righArrow.png" (click)="gotoPayment()">
