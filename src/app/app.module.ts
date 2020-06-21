@@ -21,6 +21,7 @@ import { NgxPayPalModule } from 'ngx-paypal';
 import { ResAdminComponent } from './res-admin/res-admin.component';
 import { HistoryResellerComponent } from './history-reseller/history-reseller.component';
 import { BuyResellerComponent } from './buy-reseller/buy-reseller.component';
+import { PaymentsComponent } from './payments/payments.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +42,9 @@ import { BuyResellerComponent } from './buy-reseller/buy-reseller.component';
 
     HistoryResellerComponent,
 
-    BuyResellerComponent
+    BuyResellerComponent,
+
+    PaymentsComponent
   ],
   imports: [
     BrowserModule,

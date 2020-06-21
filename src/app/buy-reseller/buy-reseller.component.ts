@@ -139,7 +139,7 @@ export class BuyResellerComponent implements OnInit, OnDestroy {
             name_last: this.details.ResellerID,
             email_address: this.details.Email,
             cell_number: this.details.Cellphone,
-            item_name: Units +  ' Units',
+            item_name: Units,
             item_description: Units +  ' Units',
             amount: this.TotalAmount,
             m_payment_id: this.details.ResellerID,

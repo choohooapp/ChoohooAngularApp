@@ -1,0 +1,19 @@
+<div class="container">
+    <table class="table">
+        <thead>
+        <tr >
+            <th>PaymentID</th>
+            <th>Game Units</th>
+            <th>Satus</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr  *ngFor="let item of ItemsArray">
+            <td>{{item.pf_payment_id}}</td>
+            <td>{{item.item_description}}</td>
+            <td>{{item.payment_status}}</td>
+        </tr>
+
+        </tbody>
+    </table>
+</div>

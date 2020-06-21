@@ -18,15 +18,13 @@ export class ApiService {
   constructor(private http: HttpClient ) { }
 
 
-  url = 'http://localhost:9000';
+  url = 'http://ec2-13-244-78-252.af-south-1.compute.amazonaws.com:8080';
 
   login(username: string, password: string) {
 
     const httpOptions = {
       headers: new HttpHeaders({
         'Content-Type':  'application/json',
-      
-        
 
       })
     };
@@ -55,11 +53,6 @@ export class ApiService {
     };
     return this.http.post<any>(this.url + '/reset', {  
       Email: username,
-  
-    
-
-
-
     }, httpOptions)
       .map(user => {
 
@@ -428,4 +421,18 @@ export class ApiService {
                   return user;
                 });
               }
+
+    getResellerPayments(Resellerid: string) {
+        const httpOptions = {
+            headers: new HttpHeaders({
+                'Content-Type':  'application/json',
+            })
+        };
+        return this.http.post<any>(this.url + '/paymentsID', {
+            ID: Resellerid,
+        }, httpOptions)
+            .map(results => {
+                return results;
+            });
+    }
 }

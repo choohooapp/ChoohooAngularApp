@@ -11,6 +11,7 @@ import { GameunitsAdComponent } from './gameunits-ad/gameunits-ad.component';
 import { ResAdminComponent } from './res-admin/res-admin.component';
 import { HistoryResellerComponent } from './history-reseller/history-reseller.component';
 import { BuyResellerComponent } from './buy-reseller/buy-reseller.component';
+import {PaymentsComponent} from './payments/payments.component';
 
 
 const routes: Routes = [
@@ -27,8 +28,9 @@ const routes: Routes = [
   { path: 'ad', component: AdminComponent },
   { path: 'menu', component: MenuComponent },
   { path: 'fgt', component: FgtComponent },
+  { path: 'payments', component: PaymentsComponent },
 ];
-
+//
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
