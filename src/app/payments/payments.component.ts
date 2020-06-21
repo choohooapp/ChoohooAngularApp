@@ -11,7 +11,8 @@ import {LocalStorageService} from 'angular-2-local-storage';
 export class PaymentsComponent implements OnInit {
     ResellerId: string;
     UserPayments: any;
-    ItemsArray : any;
+    ItemsArray : any
+    errorMessage :any;
   constructor(public Api: ApiService ,  private localStorageService: LocalStorageService) {
 
   }
@@ -27,6 +28,10 @@ export class PaymentsComponent implements OnInit {
                       console.log(response);
                 }
                 this.ItemsArray = response.person;
+                if(this.ItemsArray.length < 1)
+                {
+                    this.errorMessage = 'You have no payments yet';
+                }
             },
             error => {
              console.log(error);
