@@ -177,6 +177,32 @@ export class ApiService {
         }
 
 
+
+
+      getusers() {
+
+        const httpOptions = {
+          headers: new HttpHeaders({
+            'Content-Type':  'application/json',
+          
+            
+    
+          })
+        };
+        return this.http.get<any>(this.url + '/getUsers', {  
+      
+      
+      
+    
+    
+        }, )
+          .map(user => {
+    
+            return user;
+          });
+        }
+
+
       updateReseller(username: string, pro :string,key:string) {
 
         const httpOptions = {

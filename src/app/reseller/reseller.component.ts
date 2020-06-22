@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ApiService } from '../api.service';
 import { Router } from '@angular/router';
+import { LocalStorageService } from 'angular-2-local-storage';
 
 @Component({
   selector: 'app-reseller',
@@ -23,7 +24,7 @@ showmore = false;
   imageObj: File;
   imageUrl: string;
   showtable = false;
-  constructor(public Api :ApiService,  public router: Router) { }
+  constructor(public router: Router,public Api :ApiService ,private localStorageService: LocalStorageService) { }
 
   ngOnInit(): void {
 
@@ -99,7 +100,6 @@ showmore = false;
   
        }
   
-       
     
       
   },
@@ -354,6 +354,14 @@ showmore = false;
       
       });
 
+    
+  }
+  logout(){
+    this.localStorageService.clearAll();
+    this.router.navigate(['/login']);
+
+   
+    
     
   }
    

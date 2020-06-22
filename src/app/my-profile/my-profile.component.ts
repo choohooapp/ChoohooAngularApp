@@ -4,6 +4,7 @@ import { LocalStorageService } from 'angular-2-local-storage';
 import { IfStmt } from '@angular/compiler';
 import { THIS_EXPR } from '@angular/compiler/src/output/output_ast';
 import { IPayPalConfig, ICreateOrderRequest } from 'ngx-paypal';
+import { Router } from '@angular/router';
 declare let paypal: any;
 @Component({
   selector: 'app-my-profile',
@@ -39,7 +40,7 @@ pays :any
      transcationID:"",
       price:"", 
       ResellerID:"",}
-  constructor(public Api :ApiService, private localStorageService: LocalStorageService,) { }
+      constructor(public router: Router,public Api :ApiService ,private localStorageService: LocalStorageService) { }
 
   ngOnInit(): void {
     this.getME()
@@ -301,6 +302,14 @@ if(!this.didPaypalScriptLoad) {
         
         });
   
+      
+    }
+    logout(){
+      this.localStorageService.clearAll();
+      this.router.navigate(['/login']);
+  
+     
+      
       
     }
 

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {ApiService} from '../api.service';
 import {LocalStorageService} from 'angular-2-local-storage';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-payments',
@@ -13,9 +14,7 @@ export class PaymentsComponent implements OnInit {
     UserPayments: any;
     ItemsArray : any
     errorMessage :any;
-  constructor(public Api: ApiService ,  private localStorageService: LocalStorageService) {
-
-  }
+    constructor(public router: Router,public Api :ApiService ,private localStorageService: LocalStorageService) { }
 
   ngOnInit(): void {
       this.ResellerId = this.localStorageService.get('ResellerID');
@@ -38,5 +37,13 @@ export class PaymentsComponent implements OnInit {
           });
 
 
+    }
+    logout(){
+      this.localStorageService.clearAll();
+      this.router.navigate(['/login']);
+  
+     
+      
+      
     }
 }

@@ -1,86 +1,141 @@
 
 
-<div *ngIf ="errorMessage"class="alert alert-danger" role="alert">
-    {{errorMessage}}
-  </div>
-
-<div class="container">
-    <div class="row">
-        <div class="span5">
-            <table class="table table-striped table-condensed">
-                  <thead>
-                  <tr>
-                      <th>Method  of Paymethod</th>
-                      <th>Game Units</th>
-                      <th>transcationID</th>
-                      <th>Code</th>
-                      <th>Date</th>
-                      <!-- <th>Action</th>                                         -->
-                  </tr>
-              </thead>   
-              <tbody>
-                <tr  *ngFor="let item of ItemsArray">
-                    <td>
-
-                        <img *ngIf ="item.method =='paypal'" src="https://www.paypalobjects.com/webstatic/en_US/i/buttons/pp-acceptance-small.png" alt="Buy now with PayPal" />
-                        <!-- {{item.method}} -->
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">CHOOHOO</a>
+      </li>
+  
+ 
+    </ul>
+    <!-- <form class="form-inline" style="margin-left: 80%">
+      
+        <button  (click)="logout()"class="btn btn-outline-success my-2 my-sm-0" type="submit">LOGOUT</button>
+      </form> -->
+  </nav>
 
 
-                    </td>
-                    <td>
-
-                        
-                        {{item.units}}
 
 
-                    </td>
-                    <td>
 
-                        
-                        {{item.transcationID}}
-
-
-                    </td>
-                    <td>
-
-                        
-                        {{item.Unicode}}
-
-
-                    </td>
-                    <td>
-
-                        
-                        {{item.created}}
-
-
-                    </td>
-                
-        
-                    <!-- <td>
-                            <div class="btn-group show-on-hover">
-                                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-                                        <span class="caret"></span>
-                                    </button>
-                                    <ul  class="dropdown-menu" role="menu">
-                                      <li><a   (click)="view(item.Document)"value ="Super Admin">Document</a></li>
-                                      <li><a  (click)="addAction(item.Email,'ap')"value ="Admin Manage">Approve</a></li>
-                                      
+<div>
+        <div class="container-fluid" style="margin-right: 20%">
+            <div class="row">    
+                <div id="admin-sidebar" class="col-md-2 p-x-0 p-y-3">
+                    <ul class="sidenav admin-sidenav list-unstyled">
+                       
+                        <li ><a  routerLink="/rs" routerLinkActive="active">Become Reseller</a></li>
+                        <li ><a routerLink="/pf" >Reseller Profile</a></li>
+                        <li ><a routerLink="/hr" >Transcations</a></li>
+                        <li ><a routerLink="/payments" >Payments</a></li>
+                        <li (click)="logout()"><a  >LOGOUT</a></li>
+                        <li><a href="#">NavLink 3</a></li>
+                        <li><a href="#">NavLink 4</a></li>
+                        <li><a href="#">NavLink 5</a></li>
+                        <li><a href="#">NavLink 6</a></li>   
+                        <li><a href="#">NavLink 3</a></li>
+                        <li><a href="#">NavLink 4</a></li>
+                        <li><a href="#">NavLink 5</a></li>
+                        <li><a href="#">NavLink 6</a></li> 
+                        <li><a href="#">NavLink 3</a></li>
+                        <li><a href="#">NavLink 4</a></li>
+                        <li><a href="#">NavLink 5</a></li>
+                        <li><a href="#">NavLink 6</a></li>               
+                    </ul>
+                </div> <!-- /#admin-sidebar -->
+                <div id="admin-main-control" class="col-md-10 p-x-3 p-y-1">
+                    <div *ngIf ="errorMessage"class="alert alert-danger" role="alert">
+                        {{errorMessage}}
+                      </div>
+                    
+                    <div class="container">
+                        <div class="row">
+                            <div class="span5">
+                                <table class="table table-striped table-condensed">
+                                      <thead>
+                                      <tr>
+                                          <th>Method  of Paymethod</th>
+                                          <th>Game Units</th>
+                                          <th>transcationID</th>
+                                          <th>Code</th>
+                                          <th>Date</th>
+                                          <!-- <th>Action</th>                                         -->
+                                      </tr>
+                                  </thead>   
+                                  <tbody>
+                                    <tr  *ngFor="let item of ItemsArray">
+                                        <td>
+                    
+                                            <img *ngIf ="item.method =='paypal'" src="https://www.paypalobjects.com/webstatic/en_US/i/buttons/pp-acceptance-small.png" alt="Buy now with PayPal" />
+                                            <!-- {{item.method}} -->
+                    
+                    
+                                        </td>
+                                        <td>
+                    
+                                            
+                                            {{item.units}}
+                    
+                    
+                                        </td>
+                                        <td>
+                    
+                                            
+                                            {{item.transcationID}}
+                    
+                    
+                                        </td>
+                                        <td>
+                    
+                                            
+                                            {{item.Unicode}}
+                    
+                    
+                                        </td>
+                                        <td>
+                    
+                                            
+                                            {{item.created}}
+                    
+                    
+                                        </td>
+                                    
+                            
+                                        <!-- <td>
+                                                <div class="btn-group show-on-hover">
+                                                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                                                            <span class="caret"></span>
+                                                        </button>
+                                                        <ul  class="dropdown-menu" role="menu">
+                                                          <li><a   (click)="view(item.Document)"value ="Super Admin">Document</a></li>
+                                                          <li><a  (click)="addAction(item.Email,'ap')"value ="Admin Manage">Approve</a></li>
+                                                          
+                                                      
+                                
+                                                        </ul>
+                                                      </div>
+                                        </td> 
+                                                                         -->
+                                    </tr>
+                             
+                              
                                   
-            
-                                    </ul>
-                                  </div>
-                    </td> 
-                                                     -->
-                </tr>
-         
-          
-              
-                                              
-              </tbody>
-            </table>
-           
-            </div>
-    </div>
+                                                                  
+                                  </tbody>
+                                </table>
+                               
+                                </div>
+                        </div>
+                    
+                    
+                    
+                </div> <!-- /#admin-main-control -->
+            </div> <!-- /.row -->
+        </div> <!-- /.container-fluid -->
+
+
+
+
+
 
 

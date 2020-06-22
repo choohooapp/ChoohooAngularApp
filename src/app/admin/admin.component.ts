@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { ApiService } from '../api.service';
+import { LocalStorageService } from 'angular-2-local-storage';
 
 @Component({
   selector: 'app-admin',
@@ -7,9 +10,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AdminComponent implements OnInit {
 
-  constructor() { }
+  constructor(public router: Router,public Api :ApiService ,private localStorageService: LocalStorageService) { }
 
   ngOnInit(): void {
   }
+  logout(){
+    this.localStorageService.clearAll();
+    this.router.navigate(['/login']);
 
+   
+    
+    
+  }
 }

@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ApiService } from '../api.service';
+import { Router } from '@angular/router';
+import { LocalStorageService } from 'angular-2-local-storage';
 
 @Component({
   selector: 'app-application-pr',
@@ -13,7 +15,17 @@ export class ApplicationPrComponent implements OnInit {
   pdfSrc =''
   ItemsArray : any;
   details = {ResellerID: '', Name: '', AdminStatus: '',Type:""};
-  constructor(public Api :ApiService,) { }
+  constructor(public router: Router,public Api :ApiService ,private localStorageService: LocalStorageService) { }
+
+
+  logout(){
+    this.localStorageService.clearAll();
+    this.router.navigate(['/login']);
+
+   
+    
+    
+  }
 
   ngOnInit(): void {
     this.getME()
@@ -130,8 +142,7 @@ export class ApplicationPrComponent implements OnInit {
           
   
       }
-
-
+    
 
 }
 

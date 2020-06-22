@@ -22,6 +22,7 @@ import { ResAdminComponent } from './res-admin/res-admin.component';
 import { HistoryResellerComponent } from './history-reseller/history-reseller.component';
 import { BuyResellerComponent } from './buy-reseller/buy-reseller.component';
 import { PaymentsComponent } from './payments/payments.component';
+import { PlayerComponent } from './player/player.component';
 
 @NgModule({
   declarations: [
@@ -44,7 +45,9 @@ import { PaymentsComponent } from './payments/payments.component';
 
     BuyResellerComponent,
 
-    PaymentsComponent
+    PaymentsComponent,
+
+    PlayerComponent
   ],
   imports: [
     BrowserModule,

@@ -2,7 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { ApiService } from '../api.service';
 import { LocalStorageService } from 'angular-2-local-storage';
 import { Router } from '@angular/router';
-
+import { JwtHelperService } from "@auth0/angular-jwt";
+const helper = new JwtHelperService();
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
@@ -13,6 +14,7 @@ export class LoginComponent implements OnInit {
   showReset =false;
   errorMessage =""
   state =""
+
   constructor(public Api :ApiService, private localStorageService: LocalStorageService, public router: Router) { }
 
   ngOnInit(): void {
@@ -23,17 +25,37 @@ export class LoginComponent implements OnInit {
     this. errorMessage ="";
     this.Api.login(this.mylogin.username, this.mylogin.password).subscribe(response => {
 
-      console.log(response.found.Email);
-      if (response.found.Email) {
+     // console.log(response.found.Email);
+      if (response) {
 
-         this.localStorageService.set('ID', response.found.Email);
-         this.localStorageService.set('Status', response.found.Status);
-         this.localStorageService.set('ChoohooID', response.found.ChoohooID);
-         this.localStorageService.set('ResellerID', response.found.ResellerID);
-         this.localStorageService.set('AdminStatus', response.found.AdminStatus);
-         this.localStorageService.set('state', 'in');
+        if(response.token){
+          const decodedToken = helper.decodeToken(response.token);
+           this.localStorageService.set('ID', decodedToken.user.Email);
+           this.localStorageService.set('Status',decodedToken.user.Status);
+           this.localStorageService.set('ChoohooID',decodedToken.user.ChoohooID);
+           this.localStorageService.set('ResellerID', decodedToken.user.ResellerID);
+           this.localStorageService.set('AdminStatus', decodedToken.user.AdminStatus);
+           this.localStorageService.set('state', 'in');
+
+           const role = this.localStorageService.get('AdminStatus');
+   
+           if(role =="SuperAdmin"){
+            this.router.navigate(['/ad']);
+        
+           }
+           if(role =="AdminManager"){
+            this.router.navigate(['/ad']);
+           }
+           if(role =="0"){
+          
+            this.router.navigate(['/pr']);
+           
+          }
+          
+        }
+ 
         // this.localStorageService.set('userId', this.mylogin.username);
-         this.router.navigate(['/menu']);
+        
      } else  {
     //  this.errorMessage = response. errorList[0].description;
     //     this.setErrorMessage(this.errorMessage);

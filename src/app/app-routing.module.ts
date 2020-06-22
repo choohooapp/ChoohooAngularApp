@@ -12,6 +12,7 @@ import { ResAdminComponent } from './res-admin/res-admin.component';
 import { HistoryResellerComponent } from './history-reseller/history-reseller.component';
 import { BuyResellerComponent } from './buy-reseller/buy-reseller.component';
 import {PaymentsComponent} from './payments/payments.component';
+import { PlayerComponent } from './player/player.component';
 
 
 const routes: Routes = [
@@ -19,11 +20,12 @@ const routes: Routes = [
   { path: '', redirectTo: '/login', pathMatch: 'full' },
   { path: 'rs', component: ResellerComponent },
   { path: 'hr', component: HistoryResellerComponent },
+  { path: 'pr', component: PlayerComponent },
   { path: 'byr/:id', component: BuyResellerComponent},
   { path: 'gm', component:   GameunitsAdComponent },
   { path: 'pf', component: MyProfileComponent },
   { path: 'rsad', component: ResAdminComponent },
-  { path: 'pr', component: ApplicationPrComponent },
+  { path: 'ps', component: ApplicationPrComponent },
   { path: 'login', component: LoginComponent },
   { path: 'ad', component: AdminComponent },
   { path: 'menu', component: MenuComponent },
