@@ -21,7 +21,7 @@
     "@angular/router": "~9.1.0",
     "@auth0/angular-jwt": "^4.2.0",
     "angular-2-local-storage": "^3.0.2",
-    "bootstrap3": "^3.3.5",
+    "bootstrap": "^4.5.0",
     "ng2-pdf-viewer": "^6.3.0",
     "ngx-paypal": "^6.1.0",
     "rxjs": "~6.5.4",
