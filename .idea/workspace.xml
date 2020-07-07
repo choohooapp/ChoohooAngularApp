@@ -2,131 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b1743d19-9617-4ca1-8552-2f72f3160495" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/angular.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/__ngcc_entry_points__.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/__ngcc_entry_points__.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/bootstrap3/Gruntfile.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/bootstrap3/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/bootstrap3/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/bootstrap3/dist/css/bootstrap-theme.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/bootstrap3/dist/css/bootstrap-theme.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/bootstrap3/dist/css/bootstrap-theme.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/bootstrap3/dist/css/bootstrap.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/bootstrap3/dist/css/bootstrap.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/bootstrap3/dist/css/bootstrap.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/bootstrap3/dist/fonts/glyphicons-halflings-regular.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/bootstrap3/dist/fonts/glyphicons-halflings-regular.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/bootstrap3/dist/fonts/glyphicons-halflings-regular.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/bootstrap3/dist/fonts/glyphicons-halflings-regular.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/bootstrap3/dist/fonts/glyphicons-halflings-regular.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/bootstrap3/dist/js/bootstrap.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/bootstrap3/dist/js/bootstrap.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/bootstrap3/dist/js/npm.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/bootstrap3/fonts/glyphicons-halflings-regular.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/bootstrap3/fonts/glyphicons-halflings-regular.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/bootstrap3/fonts/glyphicons-halflings-regular.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/bootstrap3/fonts/glyphicons-halflings-regular.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/bootstrap3/fonts/glyphicons-halflings-regular.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/bootstrap3/grunt/.jshintrc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/bootstrap3/grunt/bs-commonjs-generator.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/bootstrap3/grunt/bs-glyphicons-data-generator.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/bootstrap3/grunt/bs-lessdoc-parser.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/bootstrap3/grunt/bs-raw-files-generator.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/bootstrap3/grunt/configBridge.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/bootstrap3/grunt/sauce_browsers.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/bootstrap3/js/affix.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/bootstrap3/js/alert.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/bootstrap3/js/button.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/bootstrap3/js/carousel.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/bootstrap3/js/collapse.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/bootstrap3/js/dropdown.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/bootstrap3/js/modal.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/bootstrap3/js/popover.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/bootstrap3/js/scrollspy.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/bootstrap3/js/tab.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/bootstrap3/js/tooltip.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/bootstrap3/js/transition.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/bootstrap3/less/alerts.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/bootstrap3/less/badges.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/bootstrap3/less/bootstrap.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/bootstrap3/less/breadcrumbs.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/bootstrap3/less/button-groups.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/bootstrap3/less/buttons.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/bootstrap3/less/carousel.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/bootstrap3/less/close.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/bootstrap3/less/code.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/bootstrap3/less/component-animations.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/bootstrap3/less/dropdowns.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/bootstrap3/less/forms.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/bootstrap3/less/glyphicons.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/bootstrap3/less/grid.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/bootstrap3/less/input-groups.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/bootstrap3/less/jumbotron.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/bootstrap3/less/labels.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/bootstrap3/less/list-group.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/bootstrap3/less/media.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/bootstrap3/less/mixins.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/bootstrap3/less/mixins/alerts.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/bootstrap3/less/mixins/background-variant.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/bootstrap3/less/mixins/border-radius.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/bootstrap3/less/mixins/buttons.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/bootstrap3/less/mixins/center-block.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/bootstrap3/less/mixins/clearfix.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/bootstrap3/less/mixins/forms.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/bootstrap3/less/mixins/gradients.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/bootstrap3/less/mixins/grid-framework.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/bootstrap3/less/mixins/grid.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/bootstrap3/less/mixins/hide-text.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/bootstrap3/less/mixins/image.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/bootstrap3/less/mixins/labels.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/bootstrap3/less/mixins/list-group.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/bootstrap3/less/mixins/nav-divider.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/bootstrap3/less/mixins/nav-vertical-align.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/bootstrap3/less/mixins/opacity.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/bootstrap3/less/mixins/pagination.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/bootstrap3/less/mixins/panels.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/bootstrap3/less/mixins/progress-bar.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/bootstrap3/less/mixins/reset-filter.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/bootstrap3/less/mixins/reset-text.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/bootstrap3/less/mixins/resize.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/bootstrap3/less/mixins/responsive-visibility.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/bootstrap3/less/mixins/size.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/bootstrap3/less/mixins/tab-focus.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/bootstrap3/less/mixins/table-row.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/bootstrap3/less/mixins/text-emphasis.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/bootstrap3/less/mixins/text-overflow.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/bootstrap3/less/mixins/vendor-prefixes.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/bootstrap3/less/modals.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/bootstrap3/less/navbar.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/bootstrap3/less/navs.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/bootstrap3/less/normalize.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/bootstrap3/less/pager.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/bootstrap3/less/pagination.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/bootstrap3/less/panels.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/bootstrap3/less/popovers.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/bootstrap3/less/print.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/bootstrap3/less/progress-bars.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/bootstrap3/less/responsive-embed.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/bootstrap3/less/responsive-utilities.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/bootstrap3/less/scaffolding.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/bootstrap3/less/tables.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/bootstrap3/less/theme.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/bootstrap3/less/thumbnails.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/bootstrap3/less/tooltip.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/bootstrap3/less/type.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/bootstrap3/less/utilities.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/bootstrap3/less/variables.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/bootstrap3/less/wells.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/bootstrap3/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/admin/admin.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/admin/admin.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/menu/menu.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/menu/menu.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -193,7 +71,7 @@
       <workItem from="1592135058700" duration="881000" />
       <workItem from="1592250812868" duration="29179000" />
       <workItem from="1592742882495" duration="4992000" />
-      <workItem from="1594140135856" duration="6320000" />
+      <workItem from="1594140135856" duration="6854000" />
     </task>
     <servers />
   </component>
