@@ -13,6 +13,7 @@ import { HistoryResellerComponent } from './history-reseller/history-reseller.co
 import { BuyResellerComponent } from './buy-reseller/buy-reseller.component';
 import {PaymentsComponent} from './payments/payments.component';
 import { PlayerComponent } from './player/player.component';
+import {SuperAdminComponent} from './super-admin/super-admin.component';
 
 
 const routes: Routes = [
@@ -28,7 +29,7 @@ const routes: Routes = [
   { path: 'ps', component: ApplicationPrComponent },
   { path: 'login', component: LoginComponent },
   { path: 'ad', component: AdminComponent },
-  { path: 'menu', component: MenuComponent },
+  { path: 'super-admin', component: SuperAdminComponent },
   { path: 'fgt', component: FgtComponent },
   { path: 'payments', component: PaymentsComponent },
 ];

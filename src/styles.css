@@ -11,6 +11,11 @@
     color: #e1ffff;
 }
 
+.container-align {
+    width: 80%;
+    margin-left: auto;
+}
+
 .nav-side-menu .brand {
     background-color: #23282e;
     line-height: 50px;

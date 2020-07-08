@@ -23,6 +23,7 @@ import { HistoryResellerComponent } from './history-reseller/history-reseller.co
 import { BuyResellerComponent } from './buy-reseller/buy-reseller.component';
 import { PaymentsComponent } from './payments/payments.component';
 import { PlayerComponent } from './player/player.component';
+import { SuperAdminComponent } from './super-admin/super-admin.component';
 
 @NgModule({
   declarations: [
@@ -47,7 +48,9 @@ import { PlayerComponent } from './player/player.component';
 
     PaymentsComponent,
 
-    PlayerComponent
+    PlayerComponent,
+
+    SuperAdminComponent
   ],
   imports: [
     BrowserModule,
