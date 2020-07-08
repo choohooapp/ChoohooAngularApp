@@ -14,6 +14,7 @@ import { BuyResellerComponent } from './buy-reseller/buy-reseller.component';
 import {PaymentsComponent} from './payments/payments.component';
 import { PlayerComponent } from './player/player.component';
 import {SuperAdminComponent} from './super-admin/super-admin.component';
+import {ManagerComponent} from './manager/manager.component';
 
 
 const routes: Routes = [
@@ -32,6 +33,7 @@ const routes: Routes = [
   { path: 'super-admin', component: SuperAdminComponent },
   { path: 'fgt', component: FgtComponent },
   { path: 'payments', component: PaymentsComponent },
+  { path: 'managers', component: ManagerComponent },
 ];
 //
 @NgModule({

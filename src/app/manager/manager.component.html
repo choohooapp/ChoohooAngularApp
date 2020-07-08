@@ -1,0 +1,55 @@
+<app-menu></app-menu>
+<div class="container-align">
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="span5">
+                    <table class="table table-sm table-striped table-condensed">
+                        <thead>
+                        <tr>
+                            <th>User No</th>
+                            <th>Manager ID</th>
+                            <th>Name</th>
+                            <th>Surname</th>
+                            <th>Role</th>
+                            <th>Email</th>
+                            <th>Date & Time Created</th>
+                            <th>Date & Time Last Active</th>
+                            <th>Country & City</th>
+                            <th>Action</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr  *ngFor="let item of managerArray">
+                            <td>{{item?.userNo}}</td>
+                            <td>{{item?.managerId}}</td>
+                            <td>{{item?.name}}</td>
+                            <td>{{item?.surname}}</td>
+                            <td>{{item?.role}}</td>
+                            <td>{{item?.email}}</td>
+                            <td>{{item?.dateTimeCreated}}</td>
+                            <td>{{item?.dateTimeLastActive}}</td>
+                            <td>{{item?.countryCity}}</td>
+                            <td>View Delete</td>
+                            <td>
+                                <div class="btn-group show-on-hover">
+                                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                                        <span class="caret"></span>
+                                    </button>
+<!--                                    <ul  class="dropdown-menu" role="menu">-->
+<!--                                        <li><a   (click)="view(item.Document)"value ="Super Admin">Document</a></li>-->
+<!--                                        <li><a  (click)="addAction(item.Email,'ap')"value ="Admin Manage">Approve</a></li>-->
+
+
+
+<!--                                    </ul>-->
+                                </div>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -24,6 +24,7 @@ import { BuyResellerComponent } from './buy-reseller/buy-reseller.component';
 import { PaymentsComponent } from './payments/payments.component';
 import { PlayerComponent } from './player/player.component';
 import { SuperAdminComponent } from './super-admin/super-admin.component';
+import { ManagerComponent } from './manager/manager.component';
 
 @NgModule({
   declarations: [
@@ -50,7 +51,9 @@ import { SuperAdminComponent } from './super-admin/super-admin.component';
 
     PlayerComponent,
 
-    SuperAdminComponent
+    SuperAdminComponent,
+
+    ManagerComponent
   ],
   imports: [
     BrowserModule,
