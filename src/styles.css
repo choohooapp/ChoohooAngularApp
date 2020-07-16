@@ -53,9 +53,17 @@
     background-color: #000000 !important;
 }
 
+.btn-toolbar {
+    display: block;
+}
+
 .page-item.active .page-link {
     background-color: #C0C0C0 !important;
     border-color: #C0C0C0 !important;
+}
+
+.btn-secondary {
+    background-color: #000000 !important;
 }
 
 .container-align {

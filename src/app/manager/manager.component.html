@@ -1,6 +1,30 @@
 <app-menu></app-menu>
 <div class="container-align">
     <div class="container-fluid">
+        <div class="row">
+            <div class="form-group">
+                <label class="d-inline-block"><small><strong>Show entries per page</strong></small></label>
+                <select class="custom-select mt-2 mb-2" style="width: auto" name="pageSize">
+                    <option [ngValue]="2">1</option>
+                    <option [ngValue]="4">2</option>
+                    <option [ngValue]="6">3</option>
+                </select>
+            </div>
+            <div class="btn-toolbar mt-2 ml-2" role="toolbar" aria-label="Toolbar with button groups">
+                <label class="d-inline-block"><small><strong>Choose Backup Date/s</strong></small></label>
+                <div class="btn-group mr-2" role="group" aria-label="First group">
+                    <button type="button" class="btn btn-secondary mx-2">From Date</button>
+                    <button type="button" class="btn btn-secondary">To Date</button>
+                </div>
+                <div class="btn-group mr-2" role="group" aria-label="Second group">
+                    <button type="button" class="btn btn-secondary mx-2">Backup</button>
+                    <button type="button" class="btn btn-secondary mx-2">Excel</button>
+                    <button type="button" class="btn btn-secondary mx-2">PDF</button>
+                    <button type="button" class="btn btn-secondary mx-2">CSV</button>
+                    <button type="button" class="btn btn-secondary mx-2">Graph</button>
+                </div>
+            </div>
+        </div>
         <div class="check-boxes-background-color">
             <div class="form-check-inline col-sm-1 userNumber-checkbox-align">
                 <label class="form-check-label">
