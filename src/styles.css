@@ -11,6 +11,11 @@
     color: #e1ffff;
 }
 
+.input-group-text {
+    background-color: #020203;
+    color: #FFFFFF;
+}
+
 .userNumber-checkbox-align {
     padding-left: 12px;
 }
