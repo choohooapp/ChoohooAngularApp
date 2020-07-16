@@ -1,13 +1,25 @@
 <app-menu></app-menu>
 <div class="container-align">
     <div class="container-fluid">
-        <div class="float-sm-right">
-            <button type="button" class="btn btn-secondary">Left</button>
-            <button type="button" class="btn btn-secondary">Middle</button>
-            <button type="button" class="btn btn-secondary">Right</button>
+        <div class="float-sm-right mt-2 col-md-5">
+            <div class="row">
+                <div class="col-sm-6">
+                    <button type="button" class="btn btn-outline-dark"><i class="fa fa-plus-circle fa-1x">Add User</i>
+                    </button>
+                    <button type="button" class="btn btn-outline-dark">Print</button>
+                </div>
+                <div class="input-group col-sm-6">
+                    <input type="text" class="form-control" placeholder="Search">
+                    <div class="input-group-append">
+                        <button class="btn btn-secondary" type="button">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
         </div>
-        <nav aria-label="breadcrumb">
-            <ol class="breadcrumb">
+        <nav aria-label="breadcrumb col-sm-7">
+            <ol class="breadcrumb mt-2">
                 <li class="breadcrumb-item"><a href="#">Users</a></li>
                 <li class="breadcrumb-item active" aria-current="page">Manages</li>
             </ol>

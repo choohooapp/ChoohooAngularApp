@@ -10,6 +10,9 @@
     height: 100%;
     color: #e1ffff;
 }
+.fa-1x {
+    font-size: 1.2em;
+}
 
 .userNumber-checkbox-align {
     padding-left: 12px;
@@ -25,6 +28,10 @@
 
 .surname-checkbox-align {
     margin-left: 50px;
+}
+
+.breadcrumb {
+    background-color: #FFFFFF;
 }
 
 .role-checkbox-align {
