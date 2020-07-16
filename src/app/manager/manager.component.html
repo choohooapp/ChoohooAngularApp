@@ -1,13 +1,60 @@
 <app-menu></app-menu>
 <div class="container-align">
     <div class="container-fluid">
+        <div class="check-boxes-background-color">
+            <div class="form-check-inline col-sm-1 userNumber-checkbox-align">
+                <label class="form-check-label">
+                    <input type="checkbox" class="form-check-input" value="">
+                </label>
+            </div>
+            <div class="form-check-inline col-sm-1 manager-checkbox-align">
+                <label class="form-check-label">
+                    <input type="checkbox" class="form-check-input" value="">
+                </label>
+            </div>
+            <div class="form-check-inline col-sm-1 name-checkbox-align">
+                <label class="form-check-label">
+                    <input type="checkbox" class="form-check-input" value="">
+                </label>
+            </div>
+            <div class="form-check-inline col-sm-1 surname-checkbox-align">
+                <label class="form-check-label">
+                    <input type="checkbox" class="form-check-input" value="">
+                </label>
+            </div>
+            <div class="form-check-inline col-sm-1 role-checkbox-align">
+                <label class="form-check-label">
+                    <input type="checkbox" class="form-check-input" value="">
+                </label>
+            </div>
+            <div class="form-check-inline col-sm-1 email-checkbox-align">
+                <label class="form-check-label">
+                    <input type="checkbox" class="form-check-input" value="">
+                </label>
+            </div>
+            <div class="form-check-inline col-sm-1 date-created-checkbox-align">
+                <label class="form-check-label">
+                    <input type="checkbox" class="form-check-input" value="">
+                </label>
+            </div>
+            <div class="form-check-inline col-sm-1 date-last-checkbox-align">
+                <label class="form-check-label">
+                    <input type="checkbox" class="form-check-input" value="">
+                </label>
+            </div>
+            <div class="form-check-inline col-sm-1">
+                <label class="form-check-label">
+                    <input type="checkbox" class="form-check-input" value="">
+                </label>
+            </div>
+        </div>
         <div class="container">
             <div class="row">
                 <div class="span5">
-                    <table class="table table-sm table-striped table-condensed">
-                        <thead>
+                    <table class="table table-sm table-striped">
+                        <thead class="thead-dark">
                         <tr>
-                            <th>User No</th>
+                            <th colspan="2">User No</th>
                             <th>Manager ID</th>
                             <th>Name</th>
                             <th>Surname</th>
@@ -20,7 +67,7 @@
                         </tr>
                         </thead>
                         <tbody>
-                        <tr  *ngFor="let item of managerArray">
+                        <tr *ngFor="let item of managerArray">
                             <td>{{item?.userNo}}</td>
                             <td>{{item?.managerId}}</td>
                             <td>{{item?.name}}</td>
@@ -33,21 +80,28 @@
                             <td>View Delete</td>
                             <td>
                                 <div class="btn-group show-on-hover">
-                                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                                    <button type="button" class="btn btn-default dropdown-toggle"
+                                            data-toggle="dropdown">
                                         <span class="caret"></span>
                                     </button>
-<!--                                    <ul  class="dropdown-menu" role="menu">-->
-<!--                                        <li><a   (click)="view(item.Document)"value ="Super Admin">Document</a></li>-->
-<!--                                        <li><a  (click)="addAction(item.Email,'ap')"value ="Admin Manage">Approve</a></li>-->
+                                    <!--                                    <ul  class="dropdown-menu" role="menu">-->
+                                    <!--                                        <li><a   (click)="view(item.Document)"value ="Super Admin">Document</a></li>-->
+                                    <!--                                        <li><a  (click)="addAction(item.Email,'ap')"value ="Admin Manage">Approve</a></li>-->
 
 
-
-<!--                                    </ul>-->
+                                    <!--                                    </ul>-->
                                 </div>
                             </td>
                         </tr>
                         </tbody>
                     </table>
+                    <div class="d-flex justify-content-end">
+                        <ngb-pagination [collectionSize]="70" [(page)]="page" aria-label="Custom pagination">
+                            <ng-template ngbPaginationPrevious>Prev</ng-template>
+                            <ng-template ngbPaginationNext>Next</ng-template>
+                            <ng-template ngbPaginationNumber let-p>{{ getPageSymbol(p) }}</ng-template>
+                        </ngb-pagination>
+                    </div>
                 </div>
             </div>
         </div>

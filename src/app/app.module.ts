@@ -25,6 +25,7 @@ import { PaymentsComponent } from './payments/payments.component';
 import { PlayerComponent } from './player/player.component';
 import { SuperAdminComponent } from './super-admin/super-admin.component';
 import { ManagerComponent } from './manager/manager.component';
+import {NgbModule, NgbPaginationModule} from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -36,23 +37,14 @@ import { ManagerComponent } from './manager/manager.component';
     AdminComponent,
     ApplicationComponent,
     MyProfileComponent,
-
     ApplicationPrComponent,
-
     GameunitsAdComponent,
-
     ResAdminComponent,
-
     HistoryResellerComponent,
-
     BuyResellerComponent,
-
     PaymentsComponent,
-
     PlayerComponent,
-
     SuperAdminComponent,
-
     ManagerComponent
   ],
   imports: [
@@ -65,9 +57,17 @@ import { ManagerComponent } from './manager/manager.component';
       storageType: 'localStorage'
   }),
     HttpClientModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgbModule,
+    NgbPaginationModule
   ],
   providers: [ApiService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+/*
+  imports: [BrowserModule, CommonModule, FormsModule, NgbModule],
+  declarations: [NgbdTablePagination],
+  exports: [NgbdTablePagination],
+  bootstrap: [NgbdTablePagination]
+ */

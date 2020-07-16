@@ -11,6 +11,53 @@
     color: #e1ffff;
 }
 
+.userNumber-checkbox-align {
+    padding-left: 12px;
+}
+
+.manager-checkbox-align {
+    margin-left: -15px;
+}
+
+.name-checkbox-align {
+    margin-left: -25px;
+}
+
+.surname-checkbox-align {
+    margin-left: 50px;
+}
+
+.role-checkbox-align {
+    margin-left: -30px;
+}
+
+.email-checkbox-align {
+    margin-left: 90px;
+}
+
+.date-created-checkbox-align {
+    margin-left: 15px;
+}
+
+.date-last-checkbox-align {
+    margin-left: 50px;
+}
+
+.check-boxes-background-color {
+    background-color: #C0C0C0;
+    height: 40px;
+}
+
+.page-link {
+    color: #FFFFFF !important;
+    background-color: #000000 !important;
+}
+
+.page-item.active .page-link {
+    background-color: #C0C0C0 !important;
+    border-color: #C0C0C0 !important;
+}
+
 .container-align {
     width: 80%;
     margin-left: auto;
@@ -333,3 +380,5 @@ body {
         }
     }
 }
+
+
