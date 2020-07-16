@@ -1,0 +1,133 @@
+<app-menu></app-menu>
+<div class="container-align">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="form-group">
+                <label class="d-inline-block"><small><strong>Show entries per page</strong></small></label>
+                <select class="custom-select mt-2 mb-2" style="width: auto" name="pageSize">
+                    <option [ngValue]="2">1</option>
+                    <option [ngValue]="4">2</option>
+                    <option [ngValue]="6">3</option>
+                </select>
+            </div>
+            <div class="btn-toolbar mt-2 ml-2" role="toolbar" aria-label="Toolbar with button groups">
+                <label class="d-inline-block"><small><strong>Choose Backup Date/s</strong></small></label>
+                <div class="btn-group mr-2" role="group" aria-label="First group">
+                    <button type="button" class="btn btn-secondary mx-2">From Date</button>
+                    <button type="button" class="btn btn-secondary">To Date</button>
+                </div>
+                <div class="btn-group mr-2" role="group" aria-label="Second group">
+                    <button type="button" class="btn btn-secondary mx-2">Backup</button>
+                    <button type="button" class="btn btn-secondary mx-2">Excel</button>
+                    <button type="button" class="btn btn-secondary mx-2">PDF</button>
+                    <button type="button" class="btn btn-secondary mx-2">CSV</button>
+                    <button type="button" class="btn btn-secondary mx-2">Graph</button>
+                </div>
+            </div>
+        </div>
+        <div class="check-boxes-background-color">
+            <div class="form-check-inline col-sm-1 userNumber-checkbox-align">
+                <label class="form-check-label">
+                    <input type="checkbox" class="form-check-input" value="">
+                </label>
+            </div>
+            <div class="form-check-inline col-sm-1 manager-checkbox-align">
+                <label class="form-check-label">
+                    <input type="checkbox" class="form-check-input" value="">
+                </label>
+            </div>
+            <div class="form-check-inline col-sm-1 name-checkbox-align">
+                <label class="form-check-label">
+                    <input type="checkbox" class="form-check-input" value="">
+                </label>
+            </div>
+            <div class="form-check-inline col-sm-1 surname-checkbox-align">
+                <label class="form-check-label">
+                    <input type="checkbox" class="form-check-input" value="">
+                </label>
+            </div>
+            <div class="form-check-inline col-sm-1 role-checkbox-align">
+                <label class="form-check-label">
+                    <input type="checkbox" class="form-check-input" value="">
+                </label>
+            </div>
+            <div class="form-check-inline col-sm-1 email-checkbox-align">
+                <label class="form-check-label">
+                    <input type="checkbox" class="form-check-input" value="">
+                </label>
+            </div>
+            <div class="form-check-inline col-sm-1 date-created-checkbox-align">
+                <label class="form-check-label">
+                    <input type="checkbox" class="form-check-input" value="">
+                </label>
+            </div>
+            <div class="form-check-inline col-sm-1 date-last-checkbox-align">
+                <label class="form-check-label">
+                    <input type="checkbox" class="form-check-input" value="">
+                </label>
+            </div>
+            <div class="form-check-inline col-sm-1">
+                <label class="form-check-label">
+                    <input type="checkbox" class="form-check-input" value="">
+                </label>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="span5">
+                    <table class="table table-sm table-striped">
+                        <thead class="thead-dark">
+                        <tr>
+                            <th colspan="2">User No</th>
+                            <th>Manager ID</th>
+                            <th>Name</th>
+                            <th>Surname</th>
+                            <th>Role</th>
+                            <th>Email</th>
+                            <th>Date & Time Created</th>
+                            <th>Date & Time Last Active</th>
+                            <th>Country & City</th>
+                            <th>Action</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr *ngFor="let item of managerArray">
+                            <td>{{item?.userNo}}</td>
+                            <td>{{item?.managerId}}</td>
+                            <td>{{item?.name}}</td>
+                            <td>{{item?.surname}}</td>
+                            <td>{{item?.role}}</td>
+                            <td>{{item?.email}}</td>
+                            <td>{{item?.dateTimeCreated}}</td>
+                            <td>{{item?.dateTimeLastActive}}</td>
+                            <td>{{item?.countryCity}}</td>
+                            <td>View Delete</td>
+                            <td>
+                                <div class="btn-group show-on-hover">
+                                    <button type="button" class="btn btn-default dropdown-toggle"
+                                            data-toggle="dropdown">
+                                        <span class="caret"></span>
+                                    </button>
+                                    <!--                                    <ul  class="dropdown-menu" role="menu">-->
+                                    <!--                                        <li><a   (click)="view(item.Document)"value ="Super Admin">Document</a></li>-->
+                                    <!--                                        <li><a  (click)="addAction(item.Email,'ap')"value ="Admin Manage">Approve</a></li>-->
+
+
+                                    <!--                                    </ul>-->
+                                </div>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <div class="d-flex justify-content-end">
+                        <ngb-pagination [collectionSize]="70" [(page)]="page" aria-label="Custom pagination">
+                            <ng-template ngbPaginationPrevious>Prev</ng-template>
+                            <ng-template ngbPaginationNext>Next</ng-template>
+                            <ng-template ngbPaginationNumber let-p>{{ getPageSymbol(p) }}</ng-template>
+                        </ngb-pagination>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
