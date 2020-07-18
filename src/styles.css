@@ -11,36 +11,69 @@
     color: #e1ffff;
 }
 
+.nav-container {
+    position:relative;
+}
+
+.breadcrumbAddButton {
+    position:absolute;
+    right:25rem;
+    top:50%;
+    border-radius: 25px;
+    transform:translateY(-50%);
+}
+
+.breadcrumbPrintButton {
+    position:absolute;
+    right:21rem;
+    top:50%;
+    border-radius: 25px;
+    transform:translateY(-50%);
+}
+
+.breadcrumbSearchInput {
+    position:absolute;
+    right:0rem;
+    top:50%;
+    border-radius: 25px;
+    transform:translateY(-50%);
+}
+
+.input-group-text {
+    background-color: #020203;
+    color: #FFFFFF;
+}
+
 .userNumber-checkbox-align {
     padding-left: 12px;
 }
 
 .manager-checkbox-align {
-    margin-left: -15px;
+    margin-left: -18px;
 }
 
 .name-checkbox-align {
-    margin-left: -25px;
+    margin-left: -40px;
 }
 
 .surname-checkbox-align {
-    margin-left: 50px;
+    margin-left: -20px;
 }
 
 .role-checkbox-align {
-    margin-left: -30px;
-}
-
-.email-checkbox-align {
-    margin-left: 90px;
-}
-
-.date-created-checkbox-align {
     margin-left: 15px;
 }
 
+.email-checkbox-align {
+    margin-left: -12px;
+}
+
+.date-created-checkbox-align {
+    margin-left: 100px;
+}
+
 .date-last-checkbox-align {
-    margin-left: 50px;
+    margin-left: 40px;
 }
 
 .check-boxes-background-color {
@@ -57,6 +90,14 @@
     display: block;
 }
 
+.deleteColor{
+    color: #D9230F;
+}
+
+.ViewMoreColor{
+    color: green;
+}
+
 .page-item.active .page-link {
     background-color: #C0C0C0 !important;
     border-color: #C0C0C0 !important;
@@ -68,7 +109,8 @@
 
 .container-align {
     width: 80%;
-    margin-left: auto;
+    margin-left: 17%;
+    float:left;
 }
 
 .nav-side-menu .brand {
