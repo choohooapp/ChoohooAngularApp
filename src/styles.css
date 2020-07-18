@@ -90,6 +90,14 @@
     display: block;
 }
 
+.deleteColor{
+    color: #D9230F;
+}
+
+.ViewMoreColor{
+    color: green;
+}
+
 .page-item.active .page-link {
     background-color: #C0C0C0 !important;
     border-color: #C0C0C0 !important;
@@ -101,7 +109,8 @@
 
 .container-align {
     width: 80%;
-    margin-left: auto;
+    margin-left: 17%;
+    float:left;
 }
 
 .nav-side-menu .brand {

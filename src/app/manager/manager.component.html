@@ -98,7 +98,7 @@
                     <table class="table table-sm table-striped">
                         <thead class="thead-dark">
                         <tr>
-                            <th colspan="2">User No</th>
+                            <th>User No</th>
                             <th>Manager ID</th>
                             <th>Name</th>
                             <th>Surname</th>
@@ -107,7 +107,7 @@
                             <th>Date & Time Created</th>
                             <th>Date & Time Last Active</th>
                             <th>Country & City</th>
-                            <th>Action</th>
+                            <th style="width:10%">Action</th>
                         </tr>
                         </thead>
                         <tbody>
@@ -117,24 +117,15 @@
                             <td>{{item?.name}}</td>
                             <td>{{item?.surname}}</td>
                             <td>{{item?.role}}</td>
-                            <td>{{item?.email}}</td>
+                            <td >{{item?.email}}</td>
                             <td>{{item?.dateTimeCreated}}</td>
                             <td>{{item?.dateTimeLastActive}}</td>
                             <td>{{item?.countryCity}}</td>
-                            <td>View Delete</td>
-                            <td>
-                                <div class="btn-group show-on-hover">
-                                    <button type="button" class="btn btn-default dropdown-toggle"
-                                            data-toggle="dropdown">
-                                        <span class="caret"></span>
-                                    </button>
-                                    <!--                                    <ul  class="dropdown-menu" role="menu">-->
-                                    <!--                                        <li><a   (click)="view(item.Document)"value ="Super Admin">Document</a></li>-->
-                                    <!--                                        <li><a  (click)="addAction(item.Email,'ap')"value ="Admin Manage">Approve</a></li>-->
-
-
-                                    <!--                                    </ul>-->
+                            <td style="width:10%">
+                                <div>
+                                    <a href="#">Edit</a> | <a href="#" class="deleteColor">Delete</a>
                                 </div>
+                                <a href="#" class="ViewMoreColor">View More</a>
                             </td>
                         </tr>
                         </tbody>
