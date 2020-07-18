@@ -6,7 +6,7 @@ import {AppComponent} from './app.component';
 import {LoginComponent} from './login/login.component';
 import {HttpClient} from '@angular/common/http/http';
 import {HttpClientModule} from '@angular/common/http';
-import {ApiService} from './api.service';
+import {ApiService} from './services/api.service';
 import {MenuComponent} from './menu/menu.component';
 import {LocalStorageModule} from 'angular-2-local-storage';
 import {FgtComponent} from './fgt/fgt.component';

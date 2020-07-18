@@ -1,6 +1,6 @@
 import { Component,OnDestroy, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { ApiService } from '../api.service';
+import { ApiService } from '../services/api.service';
 import { IfStmt } from '@angular/compiler';
 import {map} from 'rxjs/internal/operators';
 

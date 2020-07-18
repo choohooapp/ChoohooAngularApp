@@ -7,11 +7,11 @@
 //         $(this).prev().find(".fa").eq(1).removeClass("fa-angle-down").addClass("fa-angle-right");        
 //     });
 // })    
-<script>
-           
-$('#datepicker').datepicker({
-    uiLibrary: 'bootstrap'
-});
-</script> 
+// <script>
+//
+// $('#datepicker').datepicker({
+//     uiLibrary: 'bootstrap'
+// });
+// </script>
 
            
