@@ -49,31 +49,31 @@
 }
 
 .manager-checkbox-align {
-    margin-left: -15px;
+    margin-left: -18px;
 }
 
 .name-checkbox-align {
-    margin-left: -25px;
+    margin-left: -40px;
 }
 
 .surname-checkbox-align {
-    margin-left: 50px;
+    margin-left: -20px;
 }
 
 .role-checkbox-align {
-    margin-left: -30px;
-}
-
-.email-checkbox-align {
-    margin-left: 90px;
-}
-
-.date-created-checkbox-align {
     margin-left: 15px;
 }
 
+.email-checkbox-align {
+    margin-left: -12px;
+}
+
+.date-created-checkbox-align {
+    margin-left: 100px;
+}
+
 .date-last-checkbox-align {
-    margin-left: 50px;
+    margin-left: 40px;
 }
 
 .check-boxes-background-color {
