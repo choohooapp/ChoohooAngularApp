@@ -11,6 +11,34 @@
     color: #e1ffff;
 }
 
+.nav-container {
+    position:relative;
+}
+
+.breadcrumbAddButton {
+    position:absolute;
+    right:25rem;
+    top:50%;
+    border-radius: 25px;
+    transform:translateY(-50%);
+}
+
+.breadcrumbPrintButton {
+    position:absolute;
+    right:21rem;
+    top:50%;
+    border-radius: 25px;
+    transform:translateY(-50%);
+}
+
+.breadcrumbSearchInput {
+    position:absolute;
+    right:0rem;
+    top:50%;
+    border-radius: 25px;
+    transform:translateY(-50%);
+}
+
 .input-group-text {
     background-color: #020203;
     color: #FFFFFF;
