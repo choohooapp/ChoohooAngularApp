@@ -3,7 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="b1743d19-9617-4ca1-8552-2f72f3160495" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.module.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/manager/manager.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/manager/manager.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/manager/manager.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/manager/manager.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -51,12 +53,17 @@
       <created>1592135057317</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
+<<<<<<< Updated upstream
       <updated>1592135057317</updated>
       <workItem from="1592135058700" duration="881000" />
       <workItem from="1592250812868" duration="29179000" />
       <workItem from="1592742882495" duration="4992000" />
       <workItem from="1594140135856" duration="7010000" />
       <workItem from="1594226539009" duration="5094000" />
+=======
+      <updated>1594911622280</updated>
+      <workItem from="1594911628951" duration="5245000" />
+>>>>>>> Stashed changes
     </task>
     <servers />
   </component>
@@ -71,10 +78,18 @@
     <state x="411" y="187" width="683" height="486" key="find.popup" timestamp="1594232245160">
       <screen x="0" y="23" width="1440" height="804" />
     </state>
+<<<<<<< Updated upstream
     <state x="411" y="187" width="683" height="486" key="find.popup/0.23.1440.804@0.23.1440.804" timestamp="1594232245160" />
     <state x="385" y="72" width="670" height="676" key="search.everywhere.popup" timestamp="1594897013090">
       <screen x="0" y="23" width="1440" height="797" />
     </state>
     <state x="385" y="72" width="670" height="676" key="search.everywhere.popup/0.23.1440.797@0.23.1440.797" timestamp="1594897013090" />
+=======
+    <state x="397" y="254" key="com.intellij.ide.util.TipDialog/0.23.1440.797@0.23.1440.797" timestamp="1594911636624" />
+    <state x="450" y="340" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1594920104637">
+      <screen x="0" y="23" width="1440" height="797" />
+    </state>
+    <state x="450" y="340" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/0.23.1440.797@0.23.1440.797" timestamp="1594920104637" />
+>>>>>>> Stashed changes
   </component>
 </project>
