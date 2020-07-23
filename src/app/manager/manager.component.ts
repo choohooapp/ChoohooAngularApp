@@ -9,11 +9,8 @@ import {ApiService} from '../services/api.service';
 })
 export class ManagerComponent implements OnInit {
     managerArray: any;
-<<<<<<< Updated upstream
-=======
     editContent: any;
     viewMoreContent: any;
->>>>>>> Stashed changes
     page = 4;
     modalRef: BsModalRef;
 
@@ -31,14 +28,7 @@ export class ManagerComponent implements OnInit {
                 }
             }
 
-        })
-        // this.managerArray = [
-        //     {'userNo': '01', 'managerId': '001', 'name': 'Cape town', 'surname': 'dummyData Cape town', 'role': 'Longer Name','email':'CapeTownCity@mail.com','dateTimeCreated':'29/10/19 14:00','dateTimeLastActive':'29/10/19 14:00','countryCity':'Longer Name 2 lines'},
-        //     {'userNo': '02', 'managerId': '002', 'name': 'Cape town', 'surname': 'dummyData Cape town', 'role': 'Longer Name','email':'CapeTownCity@mail.com','dateTimeCreated':'29/10/19 14:00','dateTimeLastActive':'29/10/19 14:00','countryCity':'Longer Name 2 lines'},
-        //     {'userNo': '03', 'managerId': '003', 'name': 'Cape town', 'surname': 'dummyData Cape town', 'role': 'Longer Name','email':'CapeTownCity@mail.com','dateTimeCreated':'29/10/19 14:00','dateTimeLastActive':'29/10/19 14:00','countryCity':'Longer Name 2 lines'},
-        //     {'userNo': '04', 'managerId': '003', 'name': 'Cape town', 'surname': 'dummyData Cape town', 'role': 'Longer Name','email':'CapeTownCity@mail.com','dateTimeCreated':'29/10/19 14:00','dateTimeLastActive':'29/10/19 14:00','countryCity':'Longer Name 2 lines'},
-        //     {'userNo': '04', 'managerId': '003', 'name': 'Cape town', 'surname': 'dummyData Cape town', 'role': 'Longer Name','email':'CapeTownCity@mail.com','dateTimeCreated':'29/10/19 14:00','dateTimeLastActive':'29/10/19 14:00','countryCity':'Longer Name 2 lines'}
-        // ];
+        });
     }
 
     openModal(template: TemplateRef<any>) {
@@ -49,19 +39,13 @@ export class ManagerComponent implements OnInit {
         return ['1', '2', '3', '4', '5', '6', '7'][current - 1];
     }
 
-<<<<<<< Updated upstream
-=======
     openEdit(template: TemplateRef<any>, item: any) {
         this.modalRef = this.modalService.show(template, Object.assign({}, {class: 'gray modal-md'}));
         this.editContent = item;
-        console.log(this.editContent);
     }
 
     openViewMore(template: TemplateRef<any>, item: any) {
         this.modalRef = this.modalService.show(template, Object.assign({}, {class: 'gray modal-md'}));
         this.viewMoreContent = item;
-        console.log(this.viewMoreContent);
     }
-
->>>>>>> Stashed changes
 }
