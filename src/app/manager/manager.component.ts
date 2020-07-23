@@ -9,6 +9,11 @@ import {ApiService} from '../services/api.service';
 })
 export class ManagerComponent implements OnInit {
     managerArray: any;
+<<<<<<< Updated upstream
+=======
+    editContent: any;
+    viewMoreContent: any;
+>>>>>>> Stashed changes
     page = 4;
     modalRef: BsModalRef;
 
@@ -44,4 +49,19 @@ export class ManagerComponent implements OnInit {
         return ['1', '2', '3', '4', '5', '6', '7'][current - 1];
     }
 
+<<<<<<< Updated upstream
+=======
+    openEdit(template: TemplateRef<any>, item: any) {
+        this.modalRef = this.modalService.show(template, Object.assign({}, {class: 'gray modal-md'}));
+        this.editContent = item;
+        console.log(this.editContent);
+    }
+
+    openViewMore(template: TemplateRef<any>, item: any) {
+        this.modalRef = this.modalService.show(template, Object.assign({}, {class: 'gray modal-md'}));
+        this.viewMoreContent = item;
+        console.log(this.viewMoreContent);
+    }
+
+>>>>>>> Stashed changes
 }

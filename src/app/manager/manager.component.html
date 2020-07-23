@@ -123,9 +123,14 @@
                             <td>{{item?.Country}} {{item?.City}}</td>
                             <td style="width:10%">
                                 <div>
+<<<<<<< Updated upstream
                                     <a href="#">Edit</a> | <a href="#" class="deleteColor">Delete</a>
+=======
+                                    <a class="edit" (click)="openEdit(dtBasicExample, item)">Edit</a> | <a href="#"
+                                                                                                           class="deleteColor">Delete</a>
+>>>>>>> Stashed changes
                                 </div>
-                                <a href="#" class="ViewMoreColor">View More</a>
+                                <a (click)="openViewMore(dtViewMore, item)" class="viewMoreColor">View More</a>
                             </td>
                         </tr>
                         </tbody>
@@ -188,3 +193,164 @@
         </div>
     </ng-template>
 </div>
+<<<<<<< Updated upstream
+=======
+
+<ng-template #dtBasicExample>
+    <div class="modal-header">
+        <h4 class="modal-title pull-left">Edit form</h4>
+        <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    <div class="modal-body">
+        <div class="modal-body mx-3">
+            <div class="input-group input-group-sm mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="editUserNo">User No</span>
+                </div>
+                <input type="text" class="form-control" [(ngModel)]="editContent.userID" aria-label="Small"
+                       aria-describedby="inputGroup-sizing-sm">
+            </div>
+            <div class="input-group input-group-sm mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="EditManagerId">Manager ID</span>
+                </div>
+                <input type="text" class="form-control" [(ngModel)]="editContent.userID" aria-label="Small"
+                       aria-describedby="inputGroup-sizing-sm">
+            </div>
+            <div class="input-group input-group-sm mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="editName">Name</span>
+                </div>
+                <input type="text" class="form-control" aria-label="Small" [(ngModel)]="editContent.Name"
+                       aria-describedby="inputGroup-sizing-sm">
+            </div>
+            <div class="input-group input-group-sm mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="editSurname">Surname</span>
+                </div>
+                <input type="text" class="form-control" [(ngModel)]="editContent.Surname" aria-label="Small"
+                       aria-describedby="inputGroup-sizing-sm">
+            </div>
+            <div class="input-group input-group-sm mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="editRole">Role</span>
+                </div>
+                <input type="text" class="form-control" [(ngModel)]="editContent.RoleTag" aria-label="Small"
+                       aria-describedby="inputGroup-sizing-sm">
+            </div>
+            <div class="input-group input-group-sm mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="editDateCreated">Date & Time Created</span>
+                </div>
+                <input type="text" class="form-control" [ngModel]="editContent.created  | date:'d/M/yy  HH:mm'"
+                       aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+            </div>
+            <div class="input-group input-group-sm mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="editDateTimeLastActive">Date & Time Last Active</span>
+                </div>
+                <input type="text" class="form-control" [ngModel]="editContent.lastusedDate  | date:'d/M/yy  HH:mm'"
+                       aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+            </div>
+            <div class="input-group input-group-sm mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="editCity">City</span>
+                </div>
+                <input type="text" class="form-control" [(ngModel)]="editContent.City" aria-label="Small"
+                       aria-describedby="inputGroup-sizing-sm">
+            </div>
+            <div class="input-group input-group-sm mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="editCountry">Country</span>
+                </div>
+                <input type="text" class="form-control" [(ngModel)]="editContent.Country" aria-label="Small"
+                       aria-describedby="inputGroup-sizing-sm">
+            </div>
+        </div>
+        <div class="modal-footer d-flex justify-content-center editInsideWrapper">
+            <button class="btn btn-outline-secondary btn-block editInside" data-dismiss="modal">Edit
+                form
+                <i class="fa fa-pencil"></i>
+            </button>
+        </div>
+    </div>
+</ng-template>
+
+<ng-template #dtViewMore>
+    <div class="modal-header">
+        <h4 class="modal-title pull-left">View More form</h4>
+        <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    <div class="modal-body">
+        <div class="modal-body mx-3">
+            <div class="input-group input-group-sm mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="viewUserNo">User No</span>
+                </div>
+                <input type="text" class="form-control" [(ngModel)]="viewMoreContent.userID" aria-label="Small"
+                       aria-describedby="inputGroup-sizing-sm">
+            </div>
+            <div class="input-group input-group-sm mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="viewManagerId">Manager ID</span>
+                </div>
+                <input type="text" class="form-control" [(ngModel)]="viewMoreContent.userID" aria-label="Small"
+                       aria-describedby="inputGroup-sizing-sm">
+            </div>
+            <div class="input-group input-group-sm mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="viewName">Name</span>
+                </div>
+                <input type="text" class="form-control" aria-label="Small" [(ngModel)]="viewMoreContent.Name"
+                       aria-describedby="inputGroup-sizing-sm">
+            </div>
+            <div class="input-group input-group-sm mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="viewSurname">Surname</span>
+                </div>
+                <input type="text" class="form-control" [(ngModel)]="viewMoreContent.Surname" aria-label="Small"
+                       aria-describedby="inputGroup-sizing-sm">
+            </div>
+            <div class="input-group input-group-sm mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="viewRole">Role</span>
+                </div>
+                <input type="text" class="form-control" [(ngModel)]="viewMoreContent.RoleTag" aria-label="Small"
+                       aria-describedby="inputGroup-sizing-sm">
+            </div>
+            <div class="input-group input-group-sm mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="viewDateCreated">Date & Time Created</span>
+                </div>
+                <input type="text" class="form-control" [ngModel]="viewMoreContent.created  | date:'d/M/yy  HH:mm'"
+                       aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+            </div>
+            <div class="input-group input-group-sm mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="viewDateTimeLastActive">Date & Time Last Active</span>
+                </div>
+                <input type="text" class="form-control" [ngModel]="viewMoreContent.lastusedDate  | date:'d/M/yy  HH:mm'"
+                       aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+            </div>
+            <div class="input-group input-group-sm mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="viewCity">City</span>
+                </div>
+                <input type="text" class="form-control" [(ngModel)]="viewMoreContent.City" aria-label="Small"
+                       aria-describedby="inputGroup-sizing-sm">
+            </div>
+            <div class="input-group input-group-sm mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="viewCountry">Country</span>
+                </div>
+                <input type="text" class="form-control" [(ngModel)]="viewMoreContent.Country" aria-label="Small"
+                       aria-describedby="inputGroup-sizing-sm">
+            </div>
+        </div>
+    </div>
+</ng-template>
+>>>>>>> Stashed changes

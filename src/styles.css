@@ -11,6 +11,29 @@
     color: #e1ffff;
 }
 
+<<<<<<< Updated upstream
+=======
+.edit {
+    color: #007bff !important;
+    text-decoration: underline;
+    background-color: transparent;
+}
+
+.viewMoreColor{
+    color: #008000 !important;
+    text-decoration: underline;
+    background-color: transparent;
+}
+
+a.viewMoreColor:hover, a.viewMoreColor:focus {
+    text-decoration: underline !important;
+}
+
+a.edit:hover, a.edit:focus {
+    text-decoration: underline !important;
+}
+
+>>>>>>> Stashed changes
 .nav-container {
     position:relative;
 }
@@ -92,10 +115,6 @@
 
 .deleteColor{
     color: #D9230F;
-}
-
-.ViewMoreColor{
-    color: green;
 }
 
 .page-item.active .page-link {
