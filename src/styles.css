@@ -11,15 +11,13 @@
     color: #e1ffff;
 }
 
-<<<<<<< Updated upstream
-=======
 .edit {
     color: #007bff !important;
     text-decoration: underline;
     background-color: transparent;
 }
 
-.viewMoreColor{
+.viewMoreColor {
     color: #008000 !important;
     text-decoration: underline;
     background-color: transparent;
@@ -33,33 +31,32 @@ a.edit:hover, a.edit:focus {
     text-decoration: underline !important;
 }
 
->>>>>>> Stashed changes
 .nav-container {
-    position:relative;
+    position: relative;
 }
 
 .breadcrumbAddButton {
-    position:absolute;
-    right:25rem;
-    top:50%;
+    position: absolute;
+    right: 25rem;
+    top: 50%;
     border-radius: 25px;
-    transform:translateY(-50%);
+    transform: translateY(-50%);
 }
 
 .breadcrumbPrintButton {
-    position:absolute;
-    right:21rem;
-    top:50%;
+    position: absolute;
+    right: 21rem;
+    top: 50%;
     border-radius: 25px;
-    transform:translateY(-50%);
+    transform: translateY(-50%);
 }
 
 .breadcrumbSearchInput {
-    position:absolute;
-    right:0rem;
-    top:50%;
+    position: absolute;
+    right: 0rem;
+    top: 50%;
     border-radius: 25px;
-    transform:translateY(-50%);
+    transform: translateY(-50%);
 }
 
 .input-group-text {
@@ -113,7 +110,7 @@ a.edit:hover, a.edit:focus {
     display: block;
 }
 
-.deleteColor{
+.deleteColor {
     color: #D9230F;
 }
 
@@ -129,7 +126,7 @@ a.edit:hover, a.edit:focus {
 .container-align {
     width: 80%;
     margin-left: 17%;
-    float:left;
+    float: left;
 }
 
 .nav-side-menu .brand {
