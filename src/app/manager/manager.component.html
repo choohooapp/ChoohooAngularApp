@@ -117,13 +117,14 @@
                             <td>{{item?.Name}}</td>
                             <td>{{item?.Surname}}</td>
                             <td>{{item?.RoleTag}}</td>
-                            <td >{{item?.Email}}</td>
+                            <td>{{item?.Email}}</td>
                             <td>{{item?.created | date:'d/M/yy  HH:mm'}}</td>
                             <td>{{item?.lastusedDate | date:'d/M/yy  HH:mm'}}</td>
                             <td>{{item?.Country}} {{item?.City}}</td>
                             <td style="width:10%">
                                 <div>
-                                    <a href="#">Edit</a> | <a href="#" class="deleteColor">Delete</a>
+                                    <a class="edit" (click)="open(dtBasicExample, item)">Edit</a> | <a href="#"
+                                                                                                 class="deleteColor">Delete</a>
                                 </div>
                                 <a href="#" class="ViewMoreColor">View More</a>
                             </td>
@@ -188,3 +189,54 @@
         </div>
     </ng-template>
 </div>
+
+<ng-template #dtBasicExample>
+    <div class="modal-header">
+        <h4 class="modal-title pull-left">Edit form</h4>
+        <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    <div class="modal-body">
+        <div class="modal-body mx-3">
+            <div class="input-group input-group-sm mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="editUserNo">User No</span>
+                </div>
+                <input type="text" class="form-control" [(ngModel)]="editContent.userID" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+            </div>
+            <div class="input-group input-group-sm mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="EditManagerId">Manager ID</span>
+                </div>
+                <input type="text" class="form-control" [(ngModel)]="editContent.userID" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+            </div>
+            <div class="input-group input-group-sm mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="editName">Name</span>
+                </div>
+                <input type="text" class="form-control" aria-label="Small" [(ngModel)]="editContent.Name" aria-describedby="inputGroup-sizing-sm">
+            </div>
+            <div class="input-group input-group-sm mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="editSurname">Surname</span>
+                </div>
+                <input type="text" class="form-control" [(ngModel)]="editContent.Surname" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+            </div>
+            <div class="input-group input-group-sm mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="editRole">Role</span>
+                </div>
+                <input type="text" class="form-control" [(ngModel)]="editContent.RoleTag" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+            </div>
+
+
+        </div>
+        <div class="modal-footer d-flex justify-content-center editInsideWrapper">
+            <button class="btn btn-outline-secondary btn-block editInside" data-dismiss="modal">Edit
+                form
+                <i class="fa fa-pencil"></i>
+            </button>
+        </div>
+    </div>
+</ng-template>

@@ -11,6 +11,16 @@
     color: #e1ffff;
 }
 
+.edit {
+    color: #007bff !important;
+    text-decoration: underline;
+    background-color: transparent;
+}
+
+a.edit:hover, a.edit:focus {
+    text-decoration: underline !important;
+}
+
 .nav-container {
     position:relative;
 }
