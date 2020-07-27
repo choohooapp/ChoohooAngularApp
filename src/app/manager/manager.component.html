@@ -23,13 +23,15 @@
         </div>
         <div class="col-sm-12">
             <div class="row">
-                <div class="form-group">
-                    <label class="d-inline-block"><small><strong>Show entries per page</strong></small></label>
-                    <select class="custom-select mt-2 mb-2" style="width: auto" name="pageSize">
-                        <option [ngValue]="2">1</option>
-                        <option [ngValue]="4">2</option>
-                        <option [ngValue]="6">3</option>
-                    </select>
+                <label class="d-inline-block"><small><strong>Show entries per page</strong></small></label>
+                <div class="form-group col-sm-1">
+                    <div class="input-group input-group-sm">
+                        <select class="custom-select form-control" style="width: auto" name="pageSize">
+                            <option [ngValue]="2">1</option>
+                            <option [ngValue]="4">2</option>
+                            <option [ngValue]="6">3</option>
+                        </select>
+                    </div>
                 </div>
             </div>
             <div class="row">
