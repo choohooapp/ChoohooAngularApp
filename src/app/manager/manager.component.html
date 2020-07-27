@@ -21,30 +21,62 @@
                 </div>
             </nav>
         </div>
-        <div class="row">
-            <div class="form-group">
-                <label class="d-inline-block"><small><strong>Show entries per page</strong></small></label>
-                <select class="custom-select mt-2 mb-2" style="width: auto" name="pageSize">
-                    <option [ngValue]="2">1</option>
-                    <option [ngValue]="4">2</option>
-                    <option [ngValue]="6">3</option>
-                </select>
-            </div>
-            <div class="btn-toolbar mt-2 ml-2" role="toolbar" aria-label="Toolbar with button groups">
-                <label class="d-inline-block"><small><strong>Choose Backup Date/s</strong></small></label>
-                <div class="btn-group mr-2" role="group" aria-label="First group">
-                    <button type="button" class="btn btn-secondary mx-2">From Date</button>
-                    <button type="button" class="btn btn-secondary">To Date</button>
+        <div class="col-sm-12">
+            <div class="row">
+                <div class="form-group">
+                    <label class="d-inline-block"><small><strong>Show entries per page</strong></small></label>
+                    <select class="custom-select mt-2 mb-2" style="width: auto" name="pageSize">
+                        <option [ngValue]="2">1</option>
+                        <option [ngValue]="4">2</option>
+                        <option [ngValue]="6">3</option>
+                    </select>
                 </div>
-                <div class="btn-group mr-2" role="group" aria-label="Second group">
-                    <button type="button" class="btn btn-secondary mx-2">Backup</button>
-                    <button type="button" class="btn btn-secondary mx-2">Excel</button>
-                    <button type="button" class="btn btn-secondary mx-2">PDF</button>
-                    <button type="button" class="btn btn-secondary mx-2">CSV</button>
-                    <button type="button" class="btn btn-secondary mx-2">Graph</button>
+            </div>
+            <div class="row">
+                <label class="d-inline-block"><small><strong>Choose Backup Date/s</strong></small></label>
+                <div class="form-group col-sm-3">
+                    <div class="input-group input-group-sm">
+                        <input class="form-control" placeholder="yyyy-mm-dd"
+                               name="dp" ngbDatepicker #d="ngbDatepicker">
+                        <div class="input-group-append">
+                            <button class="btn btn-secondary calendar btn-sm" (click)="d.toggle()">From Date</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group col-sm-3">
+                    <div class="input-group input-group-sm">
+                        <input class="form-control" placeholder="yyyy-mm-dd"
+                               name="dp" ngbDatepicker #d="ngbDatepicker">
+                        <div class="input-group-append">
+                            <button class="btn btn-secondary calendar btn-sm" (click)="d.toggle()">To Date</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group col-sm-4">
+                    <button type="button" class="btn btn-secondary mx-2 btn-sm">Backup</button>
+                    <button type="button" class="btn btn-secondary mx-2  btn-sm">Excel</button>
+                    <button type="button" class="btn btn-secondary mx-2 btn-sm">PDF</button>
+                    <button type="button" class="btn btn-secondary mx-2  btn-sm">CSV</button>
+                    <button type="button" class="btn btn-secondary   btn-sm">Graph</button>
                 </div>
             </div>
         </div>
+        <!--        <div class="col-sm-12">-->
+        <!--            <div class="row">-->
+        <!--                <div class="btn-toolbar mb-2" role="toolbar" aria-label="Toolbar with button groups">-->
+        <!--                    <form class="form-inline">-->
+        <!--                        <label class="d-inline-block"><small><strong>Create Backup/s</strong></small></label>-->
+        <!--                        <div class="form-group">-->
+        <!--                            <button type="button" class="btn btn-secondary mx-4 btn-sm">Backup</button>-->
+        <!--                            <button type="button" class="btn btn-secondary mx-4 btn-sm">Excel</button>-->
+        <!--                            <button type="button" class="btn btn-secondary mx-4 btn-sm">PDF</button>-->
+        <!--                            <button type="button" class="btn btn-secondary mx-4 btn-sm">CSV</button>-->
+        <!--                            <button type="button" class="btn btn-secondary mx-4 btn-sm">Graph</button>-->
+        <!--                        </div>-->
+        <!--                    </form>-->
+        <!--                </div>-->
+        <!--            </div>-->
+        <!--        </div>-->
         <div class="check-boxes-background-color">
             <div class="form-check-inline col-sm-1 userNumber-checkbox-align">
                 <label class="form-check-label">
@@ -117,13 +149,14 @@
                             <td>{{item?.Name}}</td>
                             <td>{{item?.Surname}}</td>
                             <td>{{item?.RoleTag}}</td>
-                            <td >{{item?.Email}}</td>
+                            <td>{{item?.Email}}</td>
                             <td>{{item?.created | date:'d/M/yy  HH:mm'}}</td>
                             <td>{{item?.lastusedDate | date:'d/M/yy  HH:mm'}}</td>
                             <td>{{item?.Country}} {{item?.City}}</td>
                             <td style="width:10%">
                                 <div>
-                                    <a class="edit" (click)="openEdit(dtBasicExample, item)">Edit</a> | <a href="#" class="deleteColor">Delete</a>
+                                    <a class="edit" (click)="openEdit(dtBasicExample, item)">Edit</a> | <a href="#"
+                                                                                                           class="deleteColor">Delete</a>
                                 </div>
                                 <a (click)="openViewMore(dtViewMore, item)" class="viewMoreColor">View More</a>
                             </td>

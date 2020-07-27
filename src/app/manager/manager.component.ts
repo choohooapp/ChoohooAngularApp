@@ -1,6 +1,7 @@
 import {Component, OnInit, TemplateRef} from '@angular/core';
 import {BsModalRef, BsModalService} from 'ngx-bootstrap/modal';
 import {ApiService} from '../services/api.service';
+import {NgbDateStruct} from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
     selector: 'app-manager',
@@ -13,6 +14,7 @@ export class ManagerComponent implements OnInit {
     viewMoreContent: any;
     page = 4;
     modalRef: BsModalRef;
+    model: NgbDateStruct;
 
     constructor(private modalService: BsModalService, private apiService: ApiService) {
     }
