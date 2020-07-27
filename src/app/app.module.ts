@@ -27,6 +27,7 @@ import {SuperAdminComponent} from './super-admin/super-admin.component';
 import {ManagerComponent} from './manager/manager.component';
 import {NgbModule, NgbPaginationModule} from '@ng-bootstrap/ng-bootstrap';
 import {ModalModule} from 'ngx-bootstrap/modal';
+import { PaginationModule } from 'ngx-pagination-bootstrap';
 
 @NgModule({
     declarations: [
@@ -54,6 +55,7 @@ import {ModalModule} from 'ngx-bootstrap/modal';
         FormsModule,
         PdfViewerModule,
         ModalModule.forRoot(),
+        PaginationModule,
         LocalStorageModule.forRoot({
             prefix: 'hoo',
             storageType: 'localStorage'

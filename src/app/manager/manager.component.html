@@ -63,22 +63,6 @@
                 </div>
             </div>
         </div>
-        <!--        <div class="col-sm-12">-->
-        <!--            <div class="row">-->
-        <!--                <div class="btn-toolbar mb-2" role="toolbar" aria-label="Toolbar with button groups">-->
-        <!--                    <form class="form-inline">-->
-        <!--                        <label class="d-inline-block"><small><strong>Create Backup/s</strong></small></label>-->
-        <!--                        <div class="form-group">-->
-        <!--                            <button type="button" class="btn btn-secondary mx-4 btn-sm">Backup</button>-->
-        <!--                            <button type="button" class="btn btn-secondary mx-4 btn-sm">Excel</button>-->
-        <!--                            <button type="button" class="btn btn-secondary mx-4 btn-sm">PDF</button>-->
-        <!--                            <button type="button" class="btn btn-secondary mx-4 btn-sm">CSV</button>-->
-        <!--                            <button type="button" class="btn btn-secondary mx-4 btn-sm">Graph</button>-->
-        <!--                        </div>-->
-        <!--                    </form>-->
-        <!--                </div>-->
-        <!--            </div>-->
-        <!--        </div>-->
         <div class="check-boxes-background-color">
             <div class="form-check-inline col-sm-1 userNumber-checkbox-align">
                 <label class="form-check-label">
@@ -166,11 +150,11 @@
                         </tbody>
                     </table>
                     <div class="d-flex justify-content-end">
-                        <ngb-pagination [collectionSize]="70" [(page)]="page" aria-label="Custom pagination">
-                            <ng-template ngbPaginationPrevious>Prev</ng-template>
-                            <ng-template ngbPaginationNext>Next</ng-template>
-                            <ng-template ngbPaginationNumber let-p>{{ getPageSymbol(p) }}</ng-template>
-                        </ngb-pagination>
+                        <div class="row">
+                            <div class="col-xs-12 col-12">
+                                <ng-pagination [position]="'left'" [pageSize]="10" [itemsCount]="managerArray.length" [data]="managerArray" (getPageData)="getPageData($event)"></ng-pagination>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

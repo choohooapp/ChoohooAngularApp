@@ -9,12 +9,13 @@ import {NgbDateStruct} from '@ng-bootstrap/ng-bootstrap';
     styleUrls: ['./manager.component.css']
 })
 export class ManagerComponent implements OnInit {
-    managerArray: any;
+    managerArray: any[] = [];
     editContent: any;
     viewMoreContent: any;
     page = 4;
     modalRef: BsModalRef;
     model: NgbDateStruct;
+    currentPage = 4;
 
     constructor(private modalService: BsModalService, private apiService: ApiService) {
     }
@@ -49,5 +50,13 @@ export class ManagerComponent implements OnInit {
     openViewMore(template: TemplateRef<any>, item: any) {
         this.modalRef = this.modalService.show(template, Object.assign({}, {class: 'gray modal-md'}));
         this.viewMoreContent = item;
+    }
+
+    getPageData(event) {
+        console.log(event);
+    }
+
+    setPage(pageNo: number): void {
+        this.currentPage = pageNo;
     }
 }
